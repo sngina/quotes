@@ -26,6 +26,11 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index:number){
 
   }
+  completeQuotes(isComplete,index){
+    if(isComplete){
+      this.quotes.splice(index,1);
+    }
+  }
   
   // deletequotes(isComplete,index){ 
   //   if(isComplete){
@@ -38,6 +43,7 @@ export class QuotesComponent implements OnInit {
   // quoteDelete(complete:boolean){
   //   this.isComplete.emit(complete);
   // }
+
   constructor() { }
 
   ngOnInit(): void {
