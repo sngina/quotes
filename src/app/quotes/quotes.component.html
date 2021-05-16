@@ -9,13 +9,7 @@
              <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
              <p>{{quote.description}}</p>
              <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
-       <button (click)='toggleDetails(i)'>ToggleDetails</button>
-       <app-goal-detail *ngIf ='goal.showDescription' [quote]='quote' (isComplete) ='completeQuote($event,i)'></app-goal-detail>
-            </div>
-        </div>
-        <p>{{goal.description}}</p>
-        <button (click)='goalComplete(true)'>Complete</button>
-    </div>
+       
     <div class="col-md-6">
         <app-quote-form (addquote) = "addNewQuote ($event)"></app-quote-form>
 

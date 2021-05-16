@@ -11,9 +11,7 @@ export class QuotesDetailComponent implements OnInit{
   @Output() isDeleted= new EventEmitter<boolean>();
   
 
-  quoteComplete(complete:boolean){
-    this.isComplete.emit(complete);
-  }
+  
   quoteDelete(deleted:boolean){
     this.isDeleted.emit(deleted);
   }
