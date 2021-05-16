@@ -8,7 +8,7 @@ import {Quotes }from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
-    new Quotes(1, 'Don’t Let Yesterday Take Up Too Much Of Today.' ,'Today is a new day', 'Will Rogers', 'Stella Ngina',new Date(2020,1,1)),
+    new Quotes(1, 'Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rogers','Today is a new day','Stella Ngina',new Date(2020,1,1)),
     new Quotes(2, 'The Man Who Has Confidence In Himself Gains The Confidence Of Others.','Hasidic Proverb.','Always have confidence',   'Stella Ngina' ,new Date(2020,2,12)),
     new Quotes(3, 'A Room Without Books Is Like A Body Without A Soul.', 'Marcus Tullius Cicero.', 'Make time to learn new things' ,  'Stella Ngina',new Date(2020,3,17)),
     new Quotes(4, 'We May Encounter Many Defeats But We Must Not Be Defeated.' , 'Maya Angelou', 'Never be defeated','Stella Ngina' ,new Date(2020,5,21)),

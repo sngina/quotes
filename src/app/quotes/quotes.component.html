@@ -7,12 +7,14 @@
              <p> {{quote.quote}} by <strong>{{quote.author}}</strong></p> 
              <p><strong>{{quote.name}}</strong></p>
              <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
+             <p>{{quote.description}}</p>
+             <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
+
             </div>
         </div>
     </div>
     <div class="col-md-6">
         <app-quote-form (addquote) = "addNewQuote ($event)"></app-quote-form>
-       <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
     </div>
 
 
