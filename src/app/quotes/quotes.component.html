@@ -6,11 +6,15 @@
             <div *ngFor='let quote of quotes;let i=index'>
 
             </div>
-            <h4 id={{i}} appStrikethrough> {{quote.quote}} due on{{quote.completeDate|date|uppercase}}</h4>
             
 
         </div>
  
     </div>
+    <div class="col-md-6">
+        <app-quote-form (addquote) = "addNewQuote ($event)"></app-quote-form>
+
+    </div>
+    <p *ngIf='quote.length> 5'>You have too many quotes</p>
 
 </div>
