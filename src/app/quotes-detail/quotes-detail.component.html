@@ -1,7 +1,7 @@
  <p>
     {{quote.name}}
     </p>
-    <p>This quote will be complete in{{quotes.Delete}}days</p>
+    <p>This quote will be complete in{{quote.date|date}}days</p>
     <!-- <app-quote-detail *ngIf='quote.showDescription'[quote]='quote'(isComplete) ='deleteGoal($event ,i)'></app-quote-detail> -->
     <button (click)='quoteDelete(true)'> Delete Quote</button>
     

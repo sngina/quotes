@@ -10,7 +10,7 @@
         <p>{{quote.description}}</p>
         <button class ="btn btn-outline-primary" (click)="upvote(i)">Upvote ({{quote.upvotes}})</button>
         <button class = "btn btn-outline-primary" (click)="downvote(i)">Downvote({{quote.downvotes}})</button>
-        <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'>z</app-quote-detail> -->
+       <app-quotes-detail   [quote] ='quote' (isDeleted) = 'deleteQuote($event,i)'></app-quotes-detail>
       </div>
     </div>
       <div class="col-md-6">
