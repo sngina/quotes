@@ -1,19 +1,24 @@
 <div class="container">
-    <h1>Quotes</h1>
-    <hr>
-    <div class="row">
-        <div class="col-md-6">
-            <div *ngFor='let quote of quotes;let i=index'>
-             <p> {{quote.quote}} by <strong>{{quote.author}}</strong></p> 
-             <p><strong>{{quote.name}}</strong></p>
-             <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
-             <p>{{quote.description}}</p>
-             <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
-       
+  <h1>Quotes</h1>
+  <hr>
+  <div class="row">
     <div class="col-md-6">
-        <app-quote-form (addquote) = "addNewQuote ($event)"></app-quote-form>
+      <div *ngFor='let quote of quotes;let i=index'>
+        <p> {{quote.quote}} by <strong>{{quote.author}}</strong></p>
+        <p><strong>{{quote.name}}</strong></p>
+        <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
+        <p>{{quote.description}}</p>
+        <button class ="btn btn-outline-primary" (click)="upvote(i)">Upvote ({{quote.upvotes}})</button>
 
+        <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
+      </div>
     </div>
+      <div class="col-md-6">
+        <app-quote-form (addquote)="addNewQuote ($event)"></app-quote-form>
 
+      </div>
+    </div>
+    
+   
 
-</div>
+  </div>
