@@ -17,7 +17,7 @@ export class QuotesComponent implements OnInit {
     new Quotes(7, 'Today’s Accomplishments Were Yesterday’s Impossibilities.' , 'Robert H.Schuller', 'Stella Ngina',new Date(2020,8,13)),
  
   ];
-  addNewquotes(quote){
+  addNewQuote(quote){
     let quoteLength=this.quotes.length;
     quote.id=quoteLength +1;
     quote.completeDate= new Date(quote.completeDate)
