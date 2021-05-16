@@ -4,7 +4,9 @@
     <div class="row">
         <div class="col-md-6">
             <div *ngFor='let quote of quotes;let i=index'>
-             <p> {{quote.quote}} by <strong>{{quote.author}}</strong> <strong>{{quote.name}}</strong> {{quote.date|date}} </p>
+             <p> {{quote.quote}} by <strong>{{quote.author}}</strong></p> 
+             <p><strong>{{quote.name}}</strong></p>
+             <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
             </div>
         </div>
     </div>
