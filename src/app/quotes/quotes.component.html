@@ -9,7 +9,7 @@
         <p>{{quote.date|date}} {{quote.date|dateCount}} </p>
         <p>{{quote.description}}</p>
         <button class ="btn btn-outline-primary" (click)="upvote(i)">Upvote ({{quote.upvotes}})</button>
-
+        <button class = "btn btn-outline-primary" (click)="downvote(i)">Downvote({{quote.downvotes}})</button>
         <!-- <app-quote-detail *ngIf ='quote.showDescription' [quote] ='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
       </div>
     </div>
