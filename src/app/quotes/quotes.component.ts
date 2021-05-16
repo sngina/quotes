@@ -8,13 +8,13 @@ import {Quotes }from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
-    new Quotes(1, 'Don’t Let Yesterday Take Up Too Much Of Today.' , 'Will Rogers', 'Stella Ngina',new Date(2020,1,1)),
-    new Quotes(2, 'The Man Who Has Confidence In Himself Gains The Confidence Of Others.','Hasidic Proverb.',   'Stella Ngina' ,new Date(2020,2,12)),
-    new Quotes(3, 'A Room Without Books Is Like A Body Without A Soul.', 'Marcus Tullius Cicero.',   'Stella Ngina',new Date(2020,3,17)),
-    new Quotes(4, 'We May Encounter Many Defeats But We Must Not Be Defeated.' , 'Maya Angelou',   'Stella Ngina' ,new Date(2020,5,21)),
-    new Quotes(5, 'Whether You Think You Can Or Think You Can’t, You’re Right.' , 'Henry Ford',   'Stella Ngina',new Date(2020,6,12)),
-    new Quotes(6, 'Do What You Can With All You Have, Wherever You Are' , 'Theodore Roosevelet',  'Stella Ngina',new Date(2020,7,5)),
-    new Quotes(7, 'Today’s Accomplishments Were Yesterday’s Impossibilities.' , 'Robert H.Schuller', 'Stella Ngina',new Date(2020,8,13)),
+    new Quotes(1, 'Don’t Let Yesterday Take Up Too Much Of Today.' ,'Today is a new day', 'Will Rogers', 'Stella Ngina',new Date(2020,1,1)),
+    new Quotes(2, 'The Man Who Has Confidence In Himself Gains The Confidence Of Others.','Hasidic Proverb.','Always have confidence',   'Stella Ngina' ,new Date(2020,2,12)),
+    new Quotes(3, 'A Room Without Books Is Like A Body Without A Soul.', 'Marcus Tullius Cicero.', 'Make time to learn new things' ,  'Stella Ngina',new Date(2020,3,17)),
+    new Quotes(4, 'We May Encounter Many Defeats But We Must Not Be Defeated.' , 'Maya Angelou', 'Never be defeated','Stella Ngina' ,new Date(2020,5,21)),
+    new Quotes(5, 'Whether You Think You Can Or Think You Can’t, You’re Right.','Always believe in yourself', 'Henry Ford',  'Stella Ngina',new Date(2020,6,12)),
+    new Quotes(6, 'Do What You Can With All You Have, Wherever You Are' , 'Belive in yourself always' ,'Theodore Roosevelet',  'Stella Ngina',new Date(2020,7,5)),
+    new Quotes(7, 'Today’s Accomplishments Were Yesterday’s Impossibilities.' ,'Everything is doable', 'Robert H.Schuller', 'Stella Ngina',new Date(2020,8,13)),
  
   ];
   addNewQuote(quote){
