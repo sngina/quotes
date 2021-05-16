@@ -27,13 +27,16 @@ export class QuotesComponent implements OnInit {
 
   }
   
-  deletequotes(isComplete,index){ 
-    if(isComplete){
-      let toDelete =confirm('Are you sure you want to delete the quote ${this.quote[index].name}')
-      if(toDelete){
-        this.quotes.splice(index,1)
-      }
-    }
+  // deletequotes(isComplete,index){ 
+  //   if(isComplete){
+  //     let toDelete =confirm('Are you sure you want to delete the quote ${this.quote[index].name}')
+  //     if(toDelete){
+  //       this.quotes.splice(index,1)
+  //     }
+  //   }
+  // }
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
   }
 
   constructor() { }
