@@ -7,13 +7,14 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes-detail.component.css']
 })
 export class QuotesDetailComponent implements OnInit{
+  [x: string]: any;
   @Input() quote:Quotes;
   @Output() isDeleted= new EventEmitter<boolean>();
   
 
   
-  quoteDelete(deleted:boolean){
-    this.isDeleted.emit(deleted);
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
   }
 
   constructor() { }
