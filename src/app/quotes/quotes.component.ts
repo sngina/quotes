@@ -22,8 +22,8 @@ export class QuotesComponent implements OnInit {
     quote.id=quoteLength +1;
     quote.completeDate= new Date(quote.completeDate);
     this.quotes.push(quote);
-    alert('The Quote has been added successfully!')
-    
+    alert('The Quote has been added successfully!');
+
   }
   toggleDetails(index:number){
 
