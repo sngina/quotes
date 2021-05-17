@@ -20,8 +20,10 @@ export class QuotesComponent implements OnInit {
   addNewQuote(quote){
     let quoteLength=this.quotes.length;
     quote.id=quoteLength +1;
-    quote.completeDate= new Date(quote.completeDate)
-    this.quotes.push(quote)
+    quote.completeDate= new Date(quote.completeDate);
+    this.quotes.push(quote);
+    alert('The Quote has been added successfully!')
+    
   }
   toggleDetails(index:number){
 
@@ -36,9 +38,9 @@ export class QuotesComponent implements OnInit {
   }
   deleteQuote(isDeleted, index){
     if(isDeleted){
-      let toDelete = confirm(`Are you sure you want to delete this ${this.quotes[index].quote}?`)
+      let toDelete = confirm(`Are you sure you want to delete this ${this.quotes[index].quote}?`);
       if(toDelete){
-        this.quotes.splice(index ,1)
+        this.quotes.splice(index ,1);
       }
     }
   }
