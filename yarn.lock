@@ -1737,6 +1737,11 @@
   "resolved" "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
   "version" "1.0.2"
 
+"angular@^1.8.2":
+  "integrity" "sha512-IauMOej2xEe7/7Ennahkbb5qd/HFADiNuLSESz9Q27inmi32zB0lnAsFeLEWcox3Gd1F6YhNd1CP7/9IukJ0Gw=="
+  "resolved" "https://registry.npmjs.org/angular/-/angular-1.8.2.tgz"
+  "version" "1.8.2"
+
 "ansi-colors@^3.0.0":
   "integrity" "sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA=="
   "resolved" "https://registry.npmjs.org/ansi-colors/-/ansi-colors-3.2.4.tgz"
